@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-27u3y(p$lq@-5%5!5uig1w2ewxcbu7@xy%w8s-ha6aa)%y9)t('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -71,6 +71,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'expensetracker.wsgi.application'
+
+
 
 
 # Database

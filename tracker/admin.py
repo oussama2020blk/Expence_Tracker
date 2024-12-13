@@ -1,11 +1,12 @@
 from django.contrib import admin
-from .models import CurrentBalance, TrackingHistory
+from .models import CurrentBalance, TrackingHistory, RequestLoggs
 # Register your models here.
 
 admin.site.site_header = "Expense Tracker"
 admin.site.site_title = "Expense Tracker"
 admin.site.site_url = "Expense Tracker"
 admin.site.register(CurrentBalance)
+admin.site.register(RequestLoggs)
 
 @admin.action(description="Mark selected stories as Credit")
 def make_credit(modeladmin, request, queryset):
